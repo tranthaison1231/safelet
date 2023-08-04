@@ -9,8 +9,7 @@
     "lint": "eslint --ext .tsx,.ts src/ --fix",
     "dev": "vite",
     "ts-check": "tsc",
-    "build": "pnpm run ts-check && vite build",
-    "prepare": "husky install"
+    "build": "pnpm run ts-check && vite build"
   },
   "repository": {
     "type": "git",
