@@ -2,12 +2,9 @@ name: release
 on:
   push:
     branches: ["main"]
-  pull_request:
-    types: [opened, synchronize]
 jobs:
-  build:
-      name: Build and Test
-      timeout-minutes: 15
+  release:
+      name: Release
       runs-on: ubuntu-latest
       steps:
         - name: Check out code
