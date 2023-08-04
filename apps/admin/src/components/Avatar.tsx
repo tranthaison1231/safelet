@@ -1,5 +1,5 @@
-import { VariantProps, cva } from 'class-variance-authority'
 import user from '@/assets/svgs/user.svg'
+import { VariantProps, cva } from 'class-variance-authority'
 
 const img = cva('input', {
   compoundVariants: [{ className: ['rounded-full', 'object-cover'] }],
