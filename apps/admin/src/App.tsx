@@ -8,7 +8,6 @@ import Register from '@/pages/register'
 import ForgotPassword from './pages/forgot-password'
 import ResetPassword from './pages/reset-password'
 
-
 const router = createBrowserRouter([
   {
     element: <Login />,
