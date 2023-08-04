@@ -2,8 +2,8 @@ import type { SubmitHandler } from 'react-hook-form'
 import { useForm } from 'react-hook-form'
 import maintenance from '@/assets/images/maintenance.png'
 import Button from '@/components/Button'
-import Input from '@/components/Input'
 import { validator } from '@/utils/validator'
+import Input from '@/components/Input'
 
 interface Inputs {
   email: string
