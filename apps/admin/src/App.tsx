@@ -5,8 +5,9 @@ import Login from '@/pages/login'
 import Maintenance from '@/pages/maintenance'
 import UserAppInstalled from '@/pages/user-app-installed'
 import Register from '@/pages/register'
-import ResetPassword from './pages/reset-password'
 import ForgotPassword from './pages/forgot-password'
+import ResetPassword from './pages/reset-password'
+
 
 const router = createBrowserRouter([
   {
