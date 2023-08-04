@@ -1,6 +1,8 @@
-name: release
+name: Release Web Admin
 on:
   push:
+    paths:
+      - "apps/admin/**"
     branches: ["main"]
 jobs:
   release:
