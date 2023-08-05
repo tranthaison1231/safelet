@@ -1,5 +1,3 @@
-import React from 'react'
-
 export default function WelcomeAdmin() {
   const data = {
     email: 'Mindev@gmail.com',

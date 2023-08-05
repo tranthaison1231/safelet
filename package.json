@@ -11,7 +11,7 @@
     "preinstall": "npx only-allow pnpm",
     "dev": "turbo run dev --parallel",
     "clean": "rm -rf .parcel-cache && pnpm -r run clean",
-    "deploy": "turbo run build",
+    "build": "turbo run build",
     "changeset": "changeset",
     "version-packages": "changeset version && pnpm i --lockfile-only",
     "release-packages": "turbo run build --filter=./packages/* && changeset version && changeset publish"

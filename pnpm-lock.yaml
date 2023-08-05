@@ -111,6 +111,9 @@ importers:
       '@smithy/hash-stream-node':
         specifier: ^2.0.1
         version: 2.0.1
+      '@types/bcrypt':
+        specifier: ^5.0.0
+        version: 5.0.0
       '@types/multer':
         specifier: ^1.4.7
         version: 1.4.7
@@ -2430,6 +2433,12 @@ packages:
       svg-parser: 2.0.4
     transitivePeerDependencies:
       - supports-color
+    dev: false
+
+  /@types/bcrypt@5.0.0:
+    resolution: {integrity: sha512-agtcFKaruL8TmcvqbndlqHPSJgsolhf/qPWchFlgnW1gECTN/nKbFcoFnvKAQRFfKbh+BO6A3SWdJu9t+xF3Lw==}
+    dependencies:
+      '@types/node': 20.4.5
     dev: false
 
   /@types/body-parser@1.19.2:

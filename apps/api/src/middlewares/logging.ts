@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response } from 'express';
 
-export const logging = (req: Request, res: Response, next: NextFunction) => {
+export const logging = (_req: Request, res: Response, next: NextFunction) => {
   console.log('Before...');
 
   const now = Date.now();
