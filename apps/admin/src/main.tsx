@@ -1,8 +1,10 @@
-import { Routes } from '@generouted/react-router/lazy'
+import { routes } from '@generouted/react-router/lazy'
 import { createRoot } from 'react-dom/client'
 import { Toaster } from 'react-hot-toast'
 import { QueryClient, QueryClientProvider } from 'react-query'
 import './style.css'
+import { RouterProvider } from 'react-router-dom'
+import { sentryCreateBrowserRouter } from './configs/sentry'
 
 
 const queryClient = new QueryClient({
@@ -16,7 +18,7 @@ const queryClient = new QueryClient({
 
 createRoot(document.getElementById('app')!).render(
   <QueryClientProvider client={queryClient}>
-    <Routes />
+    <RouterProvider router={sentryCreateBrowserRouter(routes)} />
     <Toaster position="bottom-left" />
   </QueryClientProvider>
 )
