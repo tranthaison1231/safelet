@@ -18,7 +18,8 @@ request.interceptors.response.use(
     return response
   },
   async error => {
-    if (error.response.status === 401) {
+    console.log(error.config.url)
+    if (error.response.status === 401 && error.config.url !== '/sign-in') {
       try {
         const accessToken = await axios.put('/refresh-token', null, {
           baseURL: import.meta.env.VITE_BASE_API,

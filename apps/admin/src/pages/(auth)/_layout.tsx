@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom'
-import Header from '@/components/Header'
-import SideBar from '@/components/SideBar'
 import withAuth from '@/hocs/withAuth'
+import SideBar from './_components/SideBar'
+import Header from './_components/Header'
 
 function PrivateLayout() {
   return (

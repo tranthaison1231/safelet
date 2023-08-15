@@ -1,4 +1,4 @@
-import WelcomeAdmin from '@/components/WelcomeAdmin'
+import WelcomeAdmin from "./_components/WelcomeAdmin"
 
 function Dashboard() {
   return (

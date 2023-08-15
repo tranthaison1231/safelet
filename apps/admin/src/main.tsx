@@ -1,8 +1,9 @@
+import { Routes } from '@generouted/react-router/lazy'
 import { createRoot } from 'react-dom/client'
 import { Toaster } from 'react-hot-toast'
 import { QueryClient, QueryClientProvider } from 'react-query'
-import App from './App'
 import './style.css'
+
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -15,7 +16,7 @@ const queryClient = new QueryClient({
 
 createRoot(document.getElementById('app')!).render(
   <QueryClientProvider client={queryClient}>
-    <App />
+    <Routes />
     <Toaster position="bottom-left" />
   </QueryClientProvider>
 )
