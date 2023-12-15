@@ -10,7 +10,7 @@ import { validator } from '@/utils/validator'
 import { useMutation, useQuery } from 'react-query'
 import type { SubmitHandler } from 'react-hook-form'
 import { useForm } from 'react-hook-form'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate } from '@/router'
 
 interface Inputs {
   email: string

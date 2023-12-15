@@ -14,9 +14,7 @@ import { MONGO_URI, PORT } from './utils/constants';
 const bootstrap = async () => {
   try {
     console.log('🚀 Connecting to MongoDB');
-
     const app: Express = express();
-
     app.use(express.json());
     app.use(
       cors({

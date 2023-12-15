@@ -1,5 +1,5 @@
-import { type VariantProps, cva } from 'class-variance-authority'
 import Loading from './Loading'
+import { type VariantProps, cva } from 'class-variance-authority'
 
 const btn = cva('button', {
   compoundVariants: [{ className: ['rounded-lg', 'flex', 'justify-center'] }],

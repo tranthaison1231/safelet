@@ -1,10 +1,10 @@
 import { redisService } from '@/lib/redis.service';
 import { UserModel } from '@/modules/users/users.schema';
 import { UnauthorizedException } from '@/utils/exceptions';
-import { NextFunction, Request, Response } from 'express';
 import jwt from 'jsonwebtoken';
+import { NextFunction, Request, Response } from 'express';
 
-export const auth = async (req: Request, res: Response, next: NextFunction) => {
+export const auth = async (req: Request, _res: Response, next: NextFunction) => {
   const authHeader = req.headers['authorization'];
   const token = authHeader && authHeader.split(' ')[1];
   if (!token) {
